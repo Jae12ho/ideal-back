@@ -2,9 +2,9 @@ const makeId = require('./makeID');
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const port = 80;
+const port = 4000;
 
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost']}));
+app.use(cors({ origin: ['http://ideal.p-e.kr']}));
 
 app.get('/get', wrap(async (req, res) => {
   console.log(req.query);
